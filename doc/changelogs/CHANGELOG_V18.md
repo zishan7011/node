@@ -9,6 +9,7 @@
 </tr>
 <tr>
 <td>
+<a href="#18.18.0">18.18.0</a><br/>
 <a href="#18.17.1">18.17.1</a><br/>
 <a href="#18.17.0">18.17.0</a><br/>
 <a href="#18.16.1">18.16.1</a><br/>
@@ -58,6 +59,31 @@
   * [0.10.x](CHANGELOG_V010.md)
   * [io.js](CHANGELOG_IOJS.md)
   * [Archive](CHANGELOG_ARCHIVE.md)
+
+<a id="18.18.0"></a>
+
+## 2023-08-29, Version 18.18.0 'Hydrogen' (LTS), @ruyadorno
+
+### Notable Changes
+
+* \[[`863bdb785d`](https://github.com/nodejs/node/commit/863bdb785d)] - **net**: add autoSelectFamily global getter and setter (Paolo Insogna) [#45777](https://github.com/nodejs/node/pull/45777)
+
+### Commits
+
+* \[[`f4617a4f81`](https://github.com/nodejs/node/commit/f4617a4f81)] - **deps**: add loongarch64 into openssl Makefile and gen openssl-loongarch64 (Shi Pujin) [#46401](https://github.com/nodejs/node/pull/46401)
+* \[[`a00464ee06`](https://github.com/nodejs/node/commit/a00464ee06)] - **esm**: fix specifier resolution and symlinks (Zack Newsham) [#47674](https://github.com/nodejs/node/pull/47674)
+* \[[`69aaf8b1d1`](https://github.com/nodejs/node/commit/69aaf8b1d1)] - **lib**: remove invalid parameter to toASCII (Yagiz Nizipli) [#48878](https://github.com/nodejs/node/pull/48878)
+* \[[`b5f53d9a0b`](https://github.com/nodejs/node/commit/b5f53d9a0b)] - **net**: fix family autoselection SSL connection handling (Paolo Insogna) [#48189](https://github.com/nodejs/node/pull/48189)
+* \[[`267439fc34`](https://github.com/nodejs/node/commit/267439fc34)] - **net**: rework autoSelectFamily implementation (Paolo Insogna) [#46587](https://github.com/nodejs/node/pull/46587)
+* \[[`d3637cdbbf`](https://github.com/nodejs/node/commit/d3637cdbbf)] - **net**: fix address iteration with autoSelectFamily (Fedor Indutny) [#48258](https://github.com/nodejs/node/pull/48258)
+* \[[`e8289a83f1`](https://github.com/nodejs/node/commit/e8289a83f1)] - **net**: fix family autoselection timeout handling (Paolo Insogna) [#47860](https://github.com/nodejs/node/pull/47860)
+* \[[`863bdb785d`](https://github.com/nodejs/node/commit/863bdb785d)] - **net**: add autoSelectFamily global getter and setter (Paolo Insogna) [#45777](https://github.com/nodejs/node/pull/45777)
+* \[[`e4261809b0`](https://github.com/nodejs/node/commit/e4261809b0)] - **src**: replace idna functions with ada::idna (Yagiz Nizipli) [#47735](https://github.com/nodejs/node/pull/47735)
+* \[[`6de7aa1d19`](https://github.com/nodejs/node/commit/6de7aa1d19)] - **test**: move `test-tls-autoselectfamily-servername` to `test/internet` (Antoine du Hamel) [#47029](https://github.com/nodejs/node/pull/47029)
+* \[[`2de9868292`](https://github.com/nodejs/node/commit/2de9868292)] - **test**: validate host with commas on url.parse (Yagiz Nizipli) [#48878](https://github.com/nodejs/node/pull/48878)
+* \[[`e7d2e8ef2a`](https://github.com/nodejs/node/commit/e7d2e8ef2a)] - **test**: delete test-net-bytes-per-incoming-chunk-overhead (Michaël Zasso) [#48811](https://github.com/nodejs/node/pull/48811)
+* \[[`3eeca52db1`](https://github.com/nodejs/node/commit/3eeca52db1)] - **tls**: fix bugs of double TLS (rogertyang) [#48969](https://github.com/nodejs/node/pull/48969)
+* \[[`0beb5ab93d`](https://github.com/nodejs/node/commit/0beb5ab93d)] - **url**: ensure getter access do not mutate observable symbols (Antoine du Hamel) [#48897](https://github.com/nodejs/node/pull/48897)
 
 <a id="18.17.1"></a>
 
